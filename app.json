@@ -1,4 +1,12 @@
 {
   "name": "MappedInPerformance",
-  "displayName": "MappedInPerformance"
+  "displayName": "MappedInPerformance",
+  "mapOptions": {
+    "clientId": "CLIENT_ID",
+    "clientSecret": "CLIENT_SECRET",
+    "venue": "VENUE",
+    "perspective": "Website",
+    "backgroundColor": "black",
+    "labelAllLocationsOnInit": false
+  }
 }
