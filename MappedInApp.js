@@ -59,6 +59,8 @@ const MappedInApp = () => {
    * * ~50s when MOCKED_LOCATION's floorLevel is 0 and hermes enabled
    * * ~4s when MOCKED_LOCATION's floorLevel is 1 and hermes enabled
    * * ~4s when MOCKED_LOCATION's floorLevel is 3 and hermes enabled
+   * And results for iOS:
+   * * 28s when MOCKED_LOCATION's floorLevel is 0 and hermes enabled
    */
   const checkFindNearest = () => {
     console.group('find nearest');
@@ -78,7 +80,6 @@ const MappedInApp = () => {
     console.log('findFoodCourtNodes [ms]:', endTime - startTime);
 
     startTime = new Date().getTime();
-    console.log(foodCourtNodes.length);
     const nearest = findNearest(from, foodCourtNodes);
     endTime = new Date().getTime();
     console.log('findNearest [ms]:', endTime - startTime);
